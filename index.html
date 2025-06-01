@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="テキストテキストテキスト">
+  <meta name="description" content="明るいHOUSE Official Site">
+  <meta name="robots" content="noindex, nofollow">
   <title>明るいHOUSE</title>
   <link rel="icon" href="img/favicon.ico">
   <!-- Google Fonts -->
@@ -19,7 +20,7 @@
 <body>
   <header id="header">
     <h1 class="logo">
-      <a href="index.html"><img src="img/logo.svg" alt="明るいHOUSE"></a>
+      <a href="index.html"><img src="img/logo.svg" alt="明るいHOUSE">明るい HOUSE</a>
     </h1>
 
     <nav id="navi">
@@ -52,8 +53,14 @@
   </div>
 
   <main>
-    <div class="back-movie">
-      <section id="project" class="container">
+    <div id="background-video">
+      <video autoplay muted loop playsinline>
+        <source src="video/background-video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <section id="project">
+      <div class="container">
         <h2 class="section-title">建築事例を紹介</h2>
         <ul class="project-list">
           <li>
@@ -81,9 +88,11 @@
             </a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section id="features" class="container">
+    <section id="features">
+      <div class="container">
         <h2 class="section-title">明るいHOUSEの特徴</h2>
         <ul>
           <li>
@@ -102,83 +111,87 @@
             <p class="feature-text">テキストテキストテキスト</p>
           </li>
         </ul>
-      </section>
-    </div>
-
-    <section id="flow" class="container">
-      <h2 class="section-title">家ができるまでの流れ</h2>
-      <p>お問い合わせいただいてから、家が完成するまでの流れです。</p>
-      <div class="section-column">
-        <ol class="flow-image">
-          <li>ヒアリング</li>
-          <li>プラン提案</li>
-          <li>契約</li>
-          <li>着工</li>
-          <li>完成</li>
-        </ol>
-        <ul class="flow-text">
-          <li>
-            <span class="number">1</span>
-            <div class="text-area">
-              <h3 class="flow-title">ヒアリング</h3>
-              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-          </li>
-          <li>
-            <span class="number">2</span>
-            <div class="text-area">
-              <h3 class="flow-title">プラン提案</h3>
-              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-          </li>
-          <li>
-            <span class="number">3</span>
-            <div class="text-area">
-              <h3 class="flow-title">契約</h3>
-              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-          </li>
-          <li>
-            <span class="number">4</span>
-            <div class="text-area">
-              <h3 class="flow-title">着工</h3>
-              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-          </li>
-          <li>
-            <span class="number">5</span>
-            <div class="text-area">
-              <h3 class="flow-title">完成</h3>
-              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
 
-    <section id="contact" class="container">
-      <h2 class="section-title">お問い合わせ</h2>
-      <p>お問い合わせは下記からお願いいたします。</p>
-      <ul class="contact-list">
-        <li>
-          <a href="#">
-            <img src="img/icon-document.png" alt="資料請求アイコン">
-            <p>資料請求</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/icon-seminar.png" alt="Web説明会アイコン">
-            <p>Web説明会</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/icon-talk.png" alt="個別相談アイコン">
-            <p>個別相談</p>
-          </a>
-        </li>
-      </ul>
+    <section id="flow">
+      <div class="container">
+        <h2 class="section-title">家ができるまでの流れ</h2>
+        <p>お問い合わせいただいてから、家が完成するまでの流れです。</p>
+        <div class="section-column">
+          <ol class="flow-image">
+            <li>ヒアリング</li>
+            <li>プラン提案</li>
+            <li>契約</li>
+            <li>着工</li>
+            <li>完成</li>
+          </ol>
+          <ul class="flow-text">
+            <li>
+              <span class="number">1</span>
+              <div class="text-area">
+                <h3 class="flow-title">ヒアリング</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </li>
+            <li>
+              <span class="number">2</span>
+              <div class="text-area">
+                <h3 class="flow-title">プラン提案</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </li>
+            <li>
+              <span class="number">3</span>
+              <div class="text-area">
+                <h3 class="flow-title">契約</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </li>
+            <li>
+              <span class="number">4</span>
+              <div class="text-area">
+                <h3 class="flow-title">着工</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </li>
+            <li>
+              <span class="number">5</span>
+              <div class="text-area">
+                <h3 class="flow-title">完成</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">お問い合わせ</h2>
+        <p>お問い合わせは下記からお願いいたします。</p>
+        <ul class="contact-list">
+          <li>
+            <a href="#">
+              <img src="img/icon-document.png" alt="資料請求アイコン">
+              <p>資料請求</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/icon-seminar.png" alt="Web説明会アイコン">
+              <p>Web説明会</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/icon-talk.png" alt="個別相談アイコン">
+              <p>個別相談</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
@@ -200,37 +213,3 @@
 </body>
 
 </html>
-
-<!-- 
-フォント
-Google Fonts の「Noto Sans JP」を使用します。
-
-コンテンツ幅
-固定サイドメニューは300pxでメインコンテンツの最大幅は900px、横のパディングは20pxです。
-
-サイドメニュー
-300pxで固定します。レスポンシブ時も横幅を伸縮させません。スマホ時はハンバーガーメニューに切り替えます。
-
-動画
-全幅で背景に固定します。
-
-建築事例をご紹介
-背景は徐々に暗くなるようグラデーションの透過を設定します。
-画像の白枠線はCSSで設定し、画像内のテキストの下に影をつけます。画像全体をリンクにします。
-
-明るいHOUSEの特徴
-背景は透過にします。
-3つの円はリンクにして、ホバー時は左から右にスライドするよう背景色を変更します。（※詳細はデモ参照）
-
-家ができるまでの流れ
-フロー図はCSSで作ります。（※実務では画像を使用することが多いですが、今回は練習なのでCSSで作ってみましょう！）
-
-お問い合わせ
-3つのボックスにリンクを設定し、ホバー時は枠線を太く（3px）します。枠線を太くした際にレイアウトがずれないよう注意しましょう。
-
-トップへ戻るボタン
-スクロール位置が700pxを超えた時点で右下に表示します。クリックすると最上部へ戻ります。
-
-レスポンシブ
-ブレークポイントは960pxです。
-スマホの場合はヘッダーを上部に固定します。 -->
