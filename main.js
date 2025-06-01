@@ -3,6 +3,7 @@
 {
 
   const icon = document.getElementById('humburger-icon');
+  const mask = document.getElementById('mask');
 
   const toTopButton = document.getElementById('to-top-button');
 
