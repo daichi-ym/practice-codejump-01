@@ -474,9 +474,6 @@ FOOTER
 
 #footer li {
   padding: 0 20px;
-}
-
-#footer li {
   border-right: 1px solid #fff;
 }
 
@@ -649,9 +646,4 @@ Responsive
   #footer {
     margin-left: 0;
   }
-
-
-
-
-
 }
