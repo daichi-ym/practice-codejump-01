@@ -9,7 +9,7 @@ Codejumpのデザインカンプ(Figma)を元にしたコーディングトレ�
 - コーディング内容：デザインカンプ(Figma)を元に再現するトレーニング
 - 使用技術：
   - HTML5
-  - CSS3
+  - CSS3（Sass（SCSS記法）を使用）
   - JavaScript
 - レスポンシブ対応：あり
 
