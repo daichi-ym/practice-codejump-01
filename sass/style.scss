@@ -1,5 +1,17 @@
-$primary-color: #121212;
+/*-------------------------------------------
+UTILITIES
+-------------------------------------------*/
+
+$color-text-primary: #121212;
+$color-text-on-dark: #fff;
+$color-border-primary: #121212;
+$color-border-on-dark: #fff;
+$color-bg-dark: #121212;
+$color-bg-primary: #fff;
+$color-flow-image: #414141;
 $mq-breakpoint: 960px;
+$side-nav-width: 300px;
+
 
 @mixin maxmq() {
   @media (max-width: $mq-breakpoint) {
@@ -20,11 +32,11 @@ body {
   font-size: 1rem;
   line-height: 1.2;
   position: relative;
-  color: $primary-color;
+  color: $color-text-primary;
 }
 
 main {
-  margin-left: 300px;
+  margin-left: $side-nav-width;
 
   @include maxmq {
     margin-left: 0;
@@ -69,7 +81,7 @@ ul {
   &::after {
     content: "";
     width: 28%;
-    background-color: $primary-color;
+    background-color: $color-border-primary;
     height: 1px;
 
     @include maxmq {
@@ -84,10 +96,10 @@ HEADER
 
 #header {
   position: fixed;
-  width: 300px;
+  width: $side-nav-width;
   height: 100%;
   padding: 40px 45px;
-  background-color: #fff;
+  background-color: $color-bg-primary;
   overflow-y: auto;
   z-index: 10;
 
@@ -118,7 +130,7 @@ HEADER
 }
 
 /*-------------------------------------------
-HUMBURGER MENU
+HAMBURGER MENU
 -------------------------------------------*/
 
 #navi {
@@ -127,11 +139,11 @@ HUMBURGER MENU
 
   @include maxmq {
     position: fixed;
-    background-color: #fff;
-    width: 300px;
+    background-color: $color-bg-primary;
+    width: $side-nav-width;
     height: 100%;
     top: 0;
-    left: -300px;
+    left: (-$side-nav-width);
     margin-top: 0;
     padding: 35px 25px;
     opacity: 0;
@@ -150,7 +162,7 @@ HUMBURGER MENU
   }
 }
 
-#humburger-icon {
+#hamburger-icon {
   display: none;
   position: fixed;
   top: 23px;
@@ -166,7 +178,7 @@ HUMBURGER MENU
     display: block;
     width: 30px;
     height: 2px;
-    background-color: $primary-color;
+    background-color: $color-border-primary;
     transition: .3s;
 
     &+span {
@@ -198,18 +210,18 @@ HUMBURGER MENU
     pointer-events: auto;
   }
 
-  #humburger-icon {
+  #hamburger-icon {
     .middle-bar {
       opacity: 0;
     }
 
     .top-bar {
-      background-color: #fff;
+      background-color: $color-border-on-dark;
       transform: translateY(12px) rotateZ(-315deg);
     }
 
     .bottom-bar {
-      background-color: #fff;
+      background-color: $color-border-on-dark;
       transform: translateY(-12px) rotateZ(315deg);
     }
   }
@@ -222,9 +234,9 @@ TO TOP BUTTON
 #to-top-button {
   width: 50px;
   height: 50px;
-  border: 1px solid #fff;
+  border: 1px solid $color-border-on-dark;
   border-radius: 50%;
-  background-color: $primary-color;
+  background-color: $color-bg-dark;
   position: fixed;
   right: 25px;
   bottom: 25px;
@@ -242,7 +254,7 @@ TO TOP BUTTON
 
   span {
     display: inline-block;
-    border-bottom: 7px solid #fff;
+    border-bottom: 7px solid $color-text-on-dark;
     border-right: 7px solid transparent;
     border-left: 7px solid transparent;
     transform: translateY(-6px);
@@ -281,11 +293,11 @@ PROJECT
   }
 
   .section-title {
-    color: #fff;
+    color: $color-text-on-dark;
 
     &::before,
     &::after {
-      background-color: #fff;
+      background-color: $color-border-on-dark;
     }
   }
 
@@ -301,7 +313,7 @@ PROJECT
 
     li {
       width: calc((100% - 56px) / 2);
-      border: 1px solid #fff;
+      border: 1px solid $color-border-on-dark;
       position: relative;
 
       @include maxmq {
@@ -325,7 +337,7 @@ PROJECT
 
     .image-title {
       position: absolute;
-      color: #fff;
+      color: $color-text-on-dark;
       font-size: .75rem;
       bottom: 7px;
       left: 7px;
@@ -349,18 +361,18 @@ FEATURES
   }
 
   .section-title {
-    color: #fff;
+    color: $color-text-on-dark;
 
     &::before,
     &::after {
-      background-color: #fff;
+      background-color: $color-border-on-dark;
     }
   }
 
   ul {
     display: flex;
     gap: 5%;
-    color: #fff;
+    color: $color-text-on-dark;
     text-align: center;
   }
 
@@ -370,7 +382,7 @@ FEATURES
 
   .circle {
     display: block;
-    border: 1px solid #fff;
+    border: 1px solid $color-border-on-dark;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
@@ -420,7 +432,7 @@ FLOW
 #flow {
   padding-top: 120px;
   padding-bottom: 50px;
-  background: #fff;
+  background: $color-bg-primary;
 
   @include maxmq {
     padding-top: 60px;
@@ -456,8 +468,8 @@ FLOW
     li {
       width: 200px;
       height: 80px;
-      background-color: #414141;
-      color: #fff;
+      background-color: $color-flow-image;
+      color: $color-text-on-dark;
       font-size: .875rem;
       line-height: 80px;
       text-align: center;
@@ -474,7 +486,7 @@ FLOW
 
       &::after {
         content: "";
-        border-top: 30px solid #414141;
+        border-top: 30px solid $color-flow-image;
         border-right: 100px solid transparent;
         border-left: 100px solid transparent;
         position: absolute;
@@ -506,8 +518,8 @@ FLOW
       display: block;
       width: 35px;
       height: 35px;
-      background-color: #414141;
-      color: #fff;
+      background-color: $color-flow-image;
+      color: $color-text-on-dark;
       border-radius: 50%;
       text-align: center;
       line-height: 35px;
@@ -518,7 +530,7 @@ FLOW
       font-size: 1.25rem;
       font-weight: normal;
       padding-bottom: 10.5px;
-      border-bottom: 1px solid #121212;
+      border-bottom: 1px solid $color-border-primary;
     }
 
     p {
@@ -534,7 +546,7 @@ CONTACT
 #contact {
   padding-top: 80px;
   padding-bottom: 160px;
-  background: #fff;
+  background: $color-bg-primary;
 
   @include maxmq {
     padding-top: 60px;
@@ -556,7 +568,7 @@ CONTACT
     li {
       width: 30%;
       text-align: center;
-      border: 1px solid $primary-color;
+      border: 1px solid $color-border-primary;
       transition: outline-width .1s;
 
       @include maxmq {
@@ -564,7 +576,7 @@ CONTACT
       }
 
       &:hover {
-        outline: 3px solid $primary-color;
+        outline: 3px solid $color-border-primary;
       }
     }
 
@@ -577,7 +589,7 @@ CONTACT
       &::after {
         content: "";
         position: absolute;
-        border-bottom: 20px solid $primary-color;
+        border-bottom: 20px solid $color-bg-dark;
         border-left: 20px solid transparent;
         right: 4px;
         bottom: 4px;
@@ -599,12 +611,12 @@ FOOTER
 -------------------------------------------*/
 
 #footer {
-  margin-left: 300px;
+  margin-left: $side-nav-width;
   padding-top: 50px;
   padding-bottom: 20px;
   text-align: center;
-  background-color: $primary-color;
-  color: #fff;
+  background-color: $color-bg-dark;
+  color: $color-text-on-dark;
 
   @include maxmq {
     margin-left: 0;
@@ -620,7 +632,7 @@ FOOTER
 
   li {
     padding: 0 20px;
-    border-right: 1px solid #fff;
+    border-right: 1px solid $color-border-on-dark;
 
     &:last-child {
       border-right: none;

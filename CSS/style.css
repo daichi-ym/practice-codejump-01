@@ -1,4 +1,7 @@
 /*-------------------------------------------
+UTILITIES
+-------------------------------------------*/
+/*-------------------------------------------
 COMMON
 -------------------------------------------*/
 html {
@@ -107,7 +110,7 @@ HEADER
 }
 
 /*-------------------------------------------
-HUMBURGER MENU
+HAMBURGER MENU
 -------------------------------------------*/
 #navi {
   font-size: 0.875rem;
@@ -135,7 +138,7 @@ HUMBURGER MENU
   margin-top: 76px;
 }
 
-#humburger-icon {
+#hamburger-icon {
   display: none;
   position: fixed;
   top: 23px;
@@ -144,18 +147,18 @@ HUMBURGER MENU
   z-index: 10;
 }
 @media (max-width: 960px) {
-  #humburger-icon {
+  #hamburger-icon {
     display: block;
   }
 }
-#humburger-icon span {
+#hamburger-icon span {
   display: block;
   width: 30px;
   height: 2px;
   background-color: #121212;
   transition: 0.3s;
 }
-#humburger-icon span + span {
+#hamburger-icon span + span {
   margin-top: 10px;
 }
 
@@ -179,14 +182,14 @@ HUMBURGER MENU
   opacity: 0.8;
   pointer-events: auto;
 }
-.open #humburger-icon .middle-bar {
+.open #hamburger-icon .middle-bar {
   opacity: 0;
 }
-.open #humburger-icon .top-bar {
+.open #hamburger-icon .top-bar {
   background-color: #fff;
   transform: translateY(12px) rotateZ(-315deg);
 }
-.open #humburger-icon .bottom-bar {
+.open #hamburger-icon .bottom-bar {
   background-color: #fff;
   transform: translateY(-12px) rotateZ(315deg);
 }
